@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+      <title> shop </title>
+  </head>
+  <body>
+  	<header>
+  		  <h1 id="anim"> Whale Shop </h1>
+  	</header>
+  	<h2 class="orange"> These are our whales: </h2>
+  	<ul>
+        {% for i in whales %}
+        <li> {{i}} </li>
+        {% endfor %}
+    </ul>
+
+</html>
